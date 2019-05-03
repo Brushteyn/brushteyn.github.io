@@ -566,6 +566,8 @@ label {
   .form__field:before {
     display: none; }
   .form__input {
+    font-size: 20px; }
+  .form__textarea {
     font-size: 20px; } }
 
 .header {
