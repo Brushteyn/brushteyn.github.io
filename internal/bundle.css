@@ -469,15 +469,19 @@ h4 {
     border-radius: 2px; }
   .container-forms__field:hover {
     background: #F1F5F9; }
-  .container-forms__field:focus {
+  .container-forms__field:focus-within {
+    width: 396px;
+    height: 46px;
     background: #FFFFFF;
     border: 2px solid rgba(47, 128, 237, 0.75);
-    border-radius: 2px; }
+    border-radius: 2px;
+    transition: 0.2s; }
   .container-forms__field:last-child {
     margin-right: 0; }
   .container-forms__input {
     border: none;
-    background-color: transparent; }
+    background-color: transparent;
+    outline: none; }
   .container-forms__col {
     display: flex;
     margin-right: 100px;
@@ -567,6 +571,8 @@ h4 {
       display: none; }
     .container-description__checkbox label {
       padding-left: 18px; }
+    .container-description__checkbox label span:hover {
+      background: rgba(47, 128, 237, 0.05); }
     .container-description__checkbox label::before {
       content: '';
       display: inline-block;
@@ -578,6 +584,10 @@ h4 {
       margin-right: 8px;
       transition: 0.2s; }
     .container-description__checkbox input:checked + label::before {
+      content: '';
+      background-size: 100%;
+      background-image: url(src/img/icon.svg); }
+    .container-description__checkbox input:hover + label::before {
       content: '';
       background-size: 100%;
       background-image: url(src/img/icon.svg); }
@@ -614,7 +624,8 @@ h4 {
       font-size: 14px;
       line-height: 18px;
       color: rgba(0, 0, 0, 0.5);
-      padding: 0 12px 8px 12px; }
+      padding: 0 12px 8px 12px;
+      outline: none; }
 
 .container-buttons {
   margin: 32px 100px 145px 100px;
@@ -635,6 +646,15 @@ h4 {
     line-height: 16px;
     color: #FFFFFF;
     margin-right: 20px; }
+  .container-buttons__send:hover {
+    background: #2974D9; }
+  .container-buttons__send:focus {
+    border: 2px solid rgba(47, 128, 237, 0.5); }
+  .container-buttons__send:active {
+    background: #236ACB; }
+  .container-buttons__send:disabled {
+    background: #236ACB;
+    color: #FFFFFF; }
   .container-buttons__cancel {
     width: 92px;
     height: 45px;
@@ -662,7 +682,16 @@ h4 {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.5); }
+    color: #333333; }
+  .container-buttons__safe:hover {
+    background: #DBDBDB; }
+  .container-buttons__safe:focus {
+    border: 2px solid #DBDBDB; }
+  .container-buttons__safe:active {
+    background: #C4C4C4; }
+  .container-buttons__safe:disabled {
+    background: #C4C4C4;
+    color: rgba(51, 51, 51, 0.5); }
 
 
 /*# sourceMappingURL=bundle.css.map*/
