@@ -1,5 +1,7 @@
 $(function(){
     
+    $('.js-example-basic-single').select2();
+    
     var wow = new WOW().init();
     
     
@@ -43,6 +45,7 @@ $(function(){
       loop: true,
       autoplay: true,
       autoplayTimeout: 8000,
+      autoplayHoverPause: true,
       stagePadding: 150,
       responsiveClass: true,
       responsive:{
@@ -74,8 +77,12 @@ $(function(){
       dots: false,
       navs: false,
       loop: true,
+      video:true,
+      merge: true,
+      lazyLoad: true,
       autoplay: true,
       autoplayTimeout: 8000,
+      autoplayHoverPause: true,
       stagePadding: 200,
       responsiveClass: true,
       responsive:{
@@ -107,6 +114,7 @@ $(function(){
       loop: true,
       autoplay: true,
       autoplayTimeout: 8000,
+      autoplayHoverPause: true,
       stagePadding: 280,
       responsiveClass: true,
       responsive:{
@@ -139,6 +147,7 @@ $(function(){
       loop: true,
       autoplay: true,
       autoplayTimeout: 8000,
+      autoplayHoverPause: true,
       responsiveClass: true,
       responsive:{
         0:{
@@ -176,9 +185,7 @@ $(window).on('scroll', function(){
      document.getElementById('navbar').style.backgroundColor = "";
      document.getElementById('logo').style.backgroundImage = "";
      $('.header-top-li-a').css('color', '');
-     $('.header-js-example-basic-single').css('color', '');
-     $('.header-js-example-basic-single option').css('background-color', '#1B1D25');
-     $('.header-2-js-example-basic-single option').css('background-color', '#fff');
+     $('.main-header .select2-selection__rendered').css('color', '').css('background-color', '').css('border', '').css('border-radius', '');
      $('.header-top-button').css('background-color', '').css('border', '');
      $('.header-top-button a').css('color', '');
      $('.header-top-li a::after').css('border-bottom', '');
@@ -186,8 +193,7 @@ $(window).on('scroll', function(){
      document.getElementById('navbar').style.backgroundColor = "#fff";
      document.getElementById('logo').style.backgroundImage = "url(img/header-logo.svg)";
      $('.header-top-li-a').css('color', '#000');
-     $('.header-js-example-basic-single').css('color', '#000');
-     $('.header-js-example-basic-single option').css('background-color', '#fff');
+     $('.main-header .select2-selection__rendered').css('color', 'black').css('background-color', '#DDE2EE').css('border', '2px solid #C0C9E0').css('border-radius', '25px');
      $('.header-top-button').css('background-color', '#F9FAFC').css('border', '1px solid #DDE2EE');
      $('.header-top-button a').css('color', '#203C90');
      $('.header-top-li a::after').css('border-bottom', '1px solid #203C90');

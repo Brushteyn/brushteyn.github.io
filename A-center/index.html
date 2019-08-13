@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link href="select2.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:300,400,500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -17,7 +18,9 @@
    
    <div class="main-header">
        <div id="navbar" class="header-top wow fadeInUp">
-               <a id="logo" class="header-top-logo" href="index.html"></a>
+               <a href="index.html">
+                   <img id="logo" class="header-top-logo" src="" alt="">
+               </a>
            <ul class="header-top-ul">
                <li class="header-top-li"><a class="header-top-li-a" href="index.html">Главная</a></li>
                <li class="header-top-li"><a class="header-top-li-a" href="about.html">О компании</a></li>
@@ -26,11 +29,11 @@
                <li class="header-top-li"><a class="header-top-li-a" href="news.html">Новости</a></li>
                <li class="header-top-li"><a class="header-top-li-a" href="contacts.html">Контакты</a></li>
            </ul>
-           <select id="select" class="header-js-example-basic-single js-example-basic-single" name="floor">
+           <select id="mainSelect" class="js-example-basic-single" name="floor">
               <option value="1">RU</option>
-              <option value="2">ENG</option>
+              <option value="2">EN</option>
               <option value="3">UZ</option>
-            </select>
+           </select>
             <button id="button" class="header-top-button"><a href="navigation.html">Навигация</a></button>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -56,21 +59,25 @@
        </div>
         <div class="header-slider owl-carousel owl-theme owl-loaded">
             <div class="header-slider-item">
+                <img class="header-slider-item-img" src="img/main-header-bg.png" alt="">
                 <div class="owl-item-text-1 wow fadeInUp">Комфортные условия <br> для вашего бизнеса</div>
                 <div class="owl-item-text-2 wow fadeInUp">Мы рады приветствовать вас в офисе A-Center по вашему выбору. Вас встретит профессиональная встреча, в дружеской и непринужденной обстановке. Приятного вам свидания, вы в хороших руках.</div>
-                <button class="header-slider-item-button"><a href="resident.html">Подробнее</a></button>
+                <button class="header-slider-item-button wow fadeInUp"><a href="resident.html">Подробнее</a></button>
             </div>
             <div class="header-slider-item">
+                <img class="header-slider-item-img" src="img/main-header-bg.png" alt="">
                 <div class="owl-item-text-1">Комфортные условия <br> для вашего бизнеса</div>
                 <div class="owl-item-text-2">Мы рады приветствовать вас в офисе A-Center по вашему выбору. Вас встретит профессиональная встреча, в дружеской и непринужденной обстановке. Приятного вам свидания, вы в хороших руках.</div>
                 <button class="header-slider-item-button"><a href="resident.html">Подробнее</a></button>
             </div>
             <div class="header-slider-item">
+                <img class="header-slider-item-img" src="img/main-header-bg.png" alt="">
                 <div class="owl-item-text-1">Комфортные условия <br> для вашего бизнеса</div>
                 <div class="owl-item-text-2">Мы рады приветствовать вас в офисе A-Center по вашему выбору. Вас встретит профессиональная встреча, в дружеской и непринужденной обстановке. Приятного вам свидания, вы в хороших руках.</div>
                 <button class="header-slider-item-button"><a href="resident.html">Подробнее</a></button>
             </div>
             <div class="header-slider-item">
+                <img class="header-slider-item-img" src="img/main-header-bg.png" alt="">
                 <div class="owl-item-text-1">Комфортные условия <br> для вашего бизнеса</div>
                 <div class="owl-item-text-2">Мы рады приветствовать вас в офисе A-Center по вашему выбору. Вас встретит профессиональная встреча, в дружеской и непринужденной обстановке. Приятного вам свидания, вы в хороших руках.</div>
                 <button class="header-slider-item-button"><a href="resident.html">Подробнее</a></button>
@@ -171,6 +178,7 @@
 <script src="owlcarousel/owl.carousel.min.js"></script>  
 <script src="main.js"></script>
 <script src="jquery.fancybox.min.js"></script>
+<script src="script/select2.min.js"></script>
 
 </body>
 </html>
