@@ -15,6 +15,10 @@
     src: url('../fonts/OpenSans-Italic.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'open-sans-regular', sans-serif;
 }
@@ -220,6 +224,7 @@ img {
     padding: 110px 0;
     background: #EFF4FA;
     box-shadow: 0px 13px 15px 10px #EFF4FA;
+    margin-bottom: 50px;
 }
 
 .about__text h1 {
@@ -260,6 +265,13 @@ img {
     height: 2px;
     background: #EDF0F4;
     border-radius: 3px;
+}
+
+#works,
+#commisions,
+#benefits,
+#faq {
+    padding-top: 120px;
 }
 
 .works {
@@ -391,7 +403,6 @@ img {
     line-height: 44px;
     color: #233A5E;
     margin-bottom: 32px;
-    max-width: 477px;
 }
 
 .partnership__inner-item svg {
@@ -769,7 +780,7 @@ img {
         display: none;
     }
 
-    .partnership__inner-block {
+    .partnership__inner-item {
         justify-content: center;
     }
 
@@ -831,6 +842,13 @@ img {
     .footer__inner-right img {
         width: 16px;
         height: 16px;
+    }
+
+    #works,
+    #commisions,
+    #benefits,
+    #faq {
+        padding-top: 80px;
     }
 }
 
