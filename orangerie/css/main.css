@@ -8,26 +8,30 @@
 	src: url('../fonts/century-gothic-regular.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: century-gothic-regular;
 }
 
 .header {
     background-color: #018b71;
-    height: 108px;
-    margin-top: 145px;
+    height: 75px;
+    margin-top: 100px;
     margin-bottom: 110px;
 }
 
 .header-inner {
     display: flex;
     align-items: center;
-    height: 108px;
+    height: 75px;
 }
 
 .header__logo {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 .header__logo img {
@@ -58,8 +62,8 @@
 .header__nav ul li a {
     display: flex;
     color: #fff;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -192,7 +196,12 @@
 
 @media (max-width: 992px) {
     .header__nav ul li a {
-        font-size: 25px;
+        font-size: 18px;
+    }
+
+    .header__logo {
+        width: 120px;
+        height: 120px;
     }
 
     .gallery__right {
@@ -207,6 +216,11 @@
     .concept,
     .gallery {
         margin-bottom: 80px;
+    }
+
+    .address-block {
+        font-size: 28px;
+        background-position: top;
     }
 }
 
@@ -246,11 +260,11 @@
 
     .address-block {
         height: 300px;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
 
     .address-block__middle {
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
 
     .address-block__middle img {
@@ -264,28 +278,22 @@
     .gallery {
         margin-bottom: 40px;
     }
+
+    .address-block {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 575px) {
     .gallery__right {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;        
     }
 
     .gallery__right img {
-        width: 100%;
+        width: 48%;
         height: auto;
         margin-bottom: 16px;
-        display: none;
-    }
-
-    .gallery__right img:nth-child(1) {
-        display: block;
-    }
-
-    .gallery__right img:nth-child(2) {
-        display: block;
     }
 }
 
@@ -294,5 +302,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .address-block {
+        background-position: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .address-block {
+        margin-bottom: 30px;
+    }
+    
+    .address-block__middle {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .address-block {
+        margin-bottom: 5px;
+    }
+    
+    .address-block__middle {
+        margin-bottom: 5px;
     }
 }
