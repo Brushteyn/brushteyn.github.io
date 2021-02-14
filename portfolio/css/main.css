@@ -285,6 +285,7 @@ h3 .blue-colored {
     background: #fff;
     font-size: 14px;
     border-radius: 12px;
+    min-width: 180px;
 }
 
 .button-blue-bordered {
@@ -638,7 +639,7 @@ header.header .inner {
     }
 
     .portfolio__item .inner {
-        flex-direction: column
+        flex-direction: column;
     }
 
     .portfolio__info {
@@ -647,7 +648,9 @@ header.header .inner {
     }
 
     .portfolio__title {
-        margin-top: 40px
+        margin-top: 40px;
+        letter-spacing: 0;
+        margin-bottom: 5px;
     }
 
     .portfolio__description {
@@ -819,5 +822,9 @@ header.header .inner {
 @media (max-width: 425px) {
     .fact-value {
         font-size: 20px;
+    }
+    
+    .fact-item {
+        flex: 0 1 100%;
     }
 }
