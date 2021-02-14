@@ -622,7 +622,7 @@ header.header .inner {
 
 @media (max-width: 1024px) {
     .name-fullsize {
-        font-size: 64px;
+        font-size: 50px;
     }
 
     .introduction {
@@ -682,7 +682,7 @@ header.header .inner {
     }
 
     .name-fullsize {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .header-mobile--shown {
