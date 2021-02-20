@@ -286,6 +286,7 @@ h3 .blue-colored {
     font-size: 14px;
     border-radius: 12px;
     min-width: 180px;
+    text-align: center;
 }
 
 .button-blue-bordered {
