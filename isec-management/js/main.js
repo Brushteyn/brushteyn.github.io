@@ -1,5 +1,6 @@
-var header = document.getElementById("header");
-var gray = header.offsetTop;
+const header = document.getElementById("header");
+const body = document.querySelector("body");
+const gray = header.offsetTop;
 
 function fixedHeader() {
     if (window.pageYOffset > gray) {
@@ -20,6 +21,27 @@ $(function () {
     });
 });
 
+$(function () {
+    $('.header__request-call').click(function () {
+        $('.header__hamb-nav').removeClass('dblock');
+        $('.header__hamb-icon').removeClass('change');
+    });
+});
+
+$(function () {
+    $('.header__signup').click(function () {
+        $('.header__hamb-nav').removeClass('dblock');
+        $('.header__hamb-icon').removeClass('change');
+    });
+});
+
+$(function () {
+    $('.header__signin').click(function () {
+        $('.header__hamb-nav').removeClass('dblock');
+        $('.header__hamb-icon').removeClass('change');
+    });
+});
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -35,4 +57,6 @@ for (i = 0; i < acc.length; i++) {
     });
 };
 
-AOS.init();
+AOS.init({
+    once: true,
+});

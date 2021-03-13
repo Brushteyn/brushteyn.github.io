@@ -66,6 +66,29 @@ img {
     padding-top: 30px;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.err {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: red !important;
+    padding-top: 5px;
+}
+
+.error label {
+    color: red !important;
+}
+
+.error input {
+    border: 1px solid red !important;
+}
+
 /* Styles */
 
 /* Header */
@@ -190,6 +213,7 @@ img {
     background: #284F8C;
     padding: 40px 0 50px 0;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .header__hamb-nav ul {
@@ -201,6 +225,7 @@ img {
 
 .header__hamb-nav ul li {
     margin-bottom: 50px;
+    list-style-type: none;
 }
 
 .header__hamb-nav ul li a {
@@ -485,7 +510,6 @@ img {
     margin: 0 auto;
     margin-bottom: 80px;
     position: relative;
-    z-index: 2;
 }
 
 .table-desktop::before {
@@ -991,7 +1015,7 @@ img {
     left: 140px;
     background: #219FAB;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
-    min-width: 255px;
+    width: 255px;
 }
 
 .map__population-header {
@@ -1366,7 +1390,8 @@ img {
     margin-bottom: 20px;
 }
 
-.footer__logo-text button {
+.footer__logo-text a {
+    display: inline-block;
     background: #941914;
     border-radius: 5px;
     padding: 6px;
@@ -1502,6 +1527,8 @@ img {
     padding: 30px;
     background: #EFF4FA;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .callback-modal .modal-content .close {
@@ -1799,7 +1826,7 @@ img {
 }
 
 .signup-modal__form select {
-    padding: 0;
+    padding: 0 10px;
 }
 
 .signup-modal__form .form-check-label {
@@ -2029,6 +2056,7 @@ img {
         position: relative;
         top: unset;
         left: unset;
+        margin: 0 auto;
     }
 
     .map__countrys-list-item {
@@ -2078,12 +2106,14 @@ img {
     .contact__form {
         min-width: unset;
         width: 100%;
+        max-width: 350px;
         margin-bottom: 20px;
         margin-right: 0;
     }
 
     .contact__adress {
         width: 100%;
+        max-width: 350px;
     }
 
     .contact {
@@ -2106,6 +2136,19 @@ img {
 
     .table-desktop::after {
         display: none;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 426px) {
+    .offer__signup-btn {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        transform: translateX(-20px);
+    }
+
+    .offer__signup-right {
+        text-align: center;
     }
 }
 
@@ -2386,5 +2429,46 @@ img {
         bottom: 110px;
         left: -110px;
         z-index: -1;
+    }
+}
+
+@media (max-height: 575px) {
+    .signin-modal .modal-dialog {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    .signin-modal__close-wrapper {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+
+    .signin-modal__back,
+    .signin-modal__close {
+        position: inherit;
+    }
+
+    .signin-modal__form {
+        position: unset;
+        transform: unset;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        flex: 1 0 auto;
+    }
+
+    .signin-modal__form-logo {
+        margin-bottom: 10px;
+    }
+
+    .header__hamb-nav {
+        padding-bottom: 100px;
+    }
+
+    .signin-modal .modal-dialog .copyright {
+        position: unset;
+        flex: 0 0 auto;
     }
 }
