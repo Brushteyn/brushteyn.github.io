@@ -2238,6 +2238,10 @@ select {
         width: 100%;
         padding: 100px 20px;
     }
+
+    .pt30 {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 575px) {
