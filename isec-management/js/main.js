@@ -60,3 +60,19 @@ for (i = 0; i < acc.length; i++) {
 AOS.init({
     once: true,
 });
+
+$(".header__nav ul li a[href^='#']").on('click', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top - 140
+    }, 300, function () {});
+});
+
+$(".header__hamb-nav ul li a[href^='#']").on('click', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top - 100
+    }, 300, function () {});
+});

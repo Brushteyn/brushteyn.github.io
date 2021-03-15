@@ -1145,7 +1145,7 @@ select {
 /* FAQ */
 
 .faq {
-    padding-top: 130px;
+    padding-top: 100px;
 }
 
 .faq__inner {
@@ -1262,7 +1262,6 @@ select {
     background: #254575;
     position: relative;
     padding-bottom: 100px;
-    padding-top: 130px;
 }
 
 .contact::before {
@@ -2241,6 +2240,12 @@ select {
 
     .pt30 {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 575px) and (min-width: 475px) {
+    .about-us {
+        padding-top: 200px;
     }
 }
 
