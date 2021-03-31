@@ -1393,11 +1393,11 @@ body {
   .main-content .subscription__form-label {
     margin-right: 0;
     width: 100%;
+    margin-bottom: 10px;
   }
   .main-content .subscription__form-input {
     max-width: 100%;
     width: 100%;
-    margin-bottom: 10px;
   }
   .main-content .subscription__form-input::placeholder {
     text-align: center;
