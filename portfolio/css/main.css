@@ -299,6 +299,7 @@ h3 .blue-colored {
 .button-blue-filled {
     background: #0075ff;
     color: #fff;
+    text-decoration: none;
 }
 
 .button-blue-filled {
@@ -310,6 +311,7 @@ h3 .blue-colored {
     background: #fff;
     border: 1px solid #0075ff;
     color: #0075ff;
+    text-decoration: none;
 }
 
 /* Styles */
