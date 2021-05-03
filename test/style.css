@@ -7,7 +7,7 @@
 
 .zoom_in,
 .zoom_out {
-    display: flex;
+    display: inline-flex;
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
@@ -28,8 +28,6 @@
 
 .zoom_display {
     display: inline-block;
-    padding-left: 17px;
-    padding-right: 17px;
     padding-top: 3px;
     font-size: 14px;
     line-height: 36px;
