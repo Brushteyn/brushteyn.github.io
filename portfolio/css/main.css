@@ -804,7 +804,7 @@ header.header .inner {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .fact-box {
         height: 100%;
         flex-wrap: wrap;
@@ -823,11 +823,48 @@ header.header .inner {
 }
 
 @media (max-width: 425px) {
+    header.header {
+        height: 60px;
+    }
+
+    .primary-title {
+        margin-bottom: 15px;
+    }
+
     .fact-value {
         font-size: 20px;
     }
     
     .fact-item {
         flex: 0 1 100%;
+        padding: 10px 10px;
+    }
+
+    .skill-box__column {
+        padding: 20px 10px;
+    }
+
+    .skill-box .column-description {
+        margin-bottom: 20px;
+    }
+
+    .who-am-i {
+        padding-bottom: 240px;
+    }
+
+    .portfolio__item {
+        padding: 35px 0;
+    }
+
+    .home {
+        padding-bottom: 20px;
+    }
+
+    .about {
+        padding-top: 20px;
+    }
+
+    .about-fact-box, .who-am-i {
+        margin-top: 30px;
     }
 }
