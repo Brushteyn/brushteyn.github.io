@@ -10,7 +10,7 @@ const Content = (props) => {
       <div className="content">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Posts' element={<MyPosts posts={props.posts} />} />
+          <Route path='/Posts' element={<MyPosts posts={props.posts} addPost={props.addPost} />} />
           <Route path='/About' element={<About />} />
           <Route path='/Contacts' element={<Contacts />} />
         </Routes>

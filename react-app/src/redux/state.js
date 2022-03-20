@@ -1,3 +1,5 @@
+import { rerender } from '../render';
+
 let posts = [
     {
         id: 1,
@@ -24,6 +26,17 @@ let posts = [
         avaUrl: 'https://e7.pngegg.com/pngimages/78/788/png-clipart-computer-icons-avatar-business-computer-software-user-avatar-child-face.png', 
         text: 'WTF is going on?'
     },
-]
+];
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 6,
+        avaUrl: 'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png',
+        text: postMessage
+    };
+
+    posts.push(newPost);
+    rerender(posts);
+}
 
 export default posts;
