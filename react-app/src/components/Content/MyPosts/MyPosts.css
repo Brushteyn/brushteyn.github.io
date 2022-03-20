@@ -1,0 +1,19 @@
+.my-posts {
+
+}
+
+.my-posts__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.my-posts__header textarea {
+  margin-right: 20px;
+}
+
+.my-posts__body {
+
+}
