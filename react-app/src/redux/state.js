@@ -1,4 +1,6 @@
-import { rerender } from '../render';
+let rerender = () => {
+    
+}
 
 let posts = [
     {
@@ -28,7 +30,7 @@ let posts = [
     },
 ];
 
-export let addPost = (postMessage) => {
+export const addPost = (postMessage) => {
     let newPost = {
         id: 6,
         avaUrl: 'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png',
@@ -37,6 +39,10 @@ export let addPost = (postMessage) => {
 
     posts.push(newPost);
     rerender(posts);
+}
+
+export const subscribe = (observer) => {
+    rerender = observer
 }
 
 export default posts;
