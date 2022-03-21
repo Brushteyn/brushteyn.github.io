@@ -1,5 +1,5 @@
 let rerender = () => {
-    
+
 }
 
 let posts = [

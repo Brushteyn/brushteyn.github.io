@@ -7,7 +7,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import {addPost} from './redux/state';
 
-let rerender = () => {
+let rerender = (posts) => {
   ReactDOM.render(
     <BrowserRouter>
       <App posts={posts} addPost={addPost} />
