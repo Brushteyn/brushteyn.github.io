@@ -1,6 +1,4 @@
-let rerender = () => {
-
-}
+let rerender = () => {}
 
 let posts = [
     {
