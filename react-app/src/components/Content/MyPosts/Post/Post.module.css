@@ -1,15 +1,15 @@
-.my-posts__item {
+.myPosts__item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.my-posts__item img {
+.myPosts__item img {
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
 
-.my-posts__item span:not(:last-child) {
+.myPosts__item span:not(:last-child) {
     margin-right: 20px;
 }

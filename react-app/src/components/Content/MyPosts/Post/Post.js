@@ -1,8 +1,8 @@
-import './Post.css';
+import s from './Post.module.css';
 
 const Post = (props) => {
   return (
-    <div className="my-posts__item">
+    <div className={s.myPosts__item}>
       <span>{props.id + 1 + ')'}</span>
       <img src={props.avaUrl} alt="img" />
       <span>{props.text}</span>

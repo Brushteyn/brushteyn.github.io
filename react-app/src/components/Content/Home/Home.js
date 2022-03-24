@@ -1,8 +1,8 @@
-import './Home.css';
+import s from './Home.module.css';
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className= {s.home}>
       Here will be home page
     </div>
   );

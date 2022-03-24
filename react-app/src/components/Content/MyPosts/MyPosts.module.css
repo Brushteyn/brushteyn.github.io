@@ -1,8 +1,8 @@
-.my-posts {
+.myPosts {
 
 }
 
-.my-posts__header {
+.myPosts__header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -10,10 +10,10 @@
   border-bottom: 1px solid #000;
 }
 
-.my-posts__header textarea {
+.myPosts__header textarea {
   margin-right: 20px;
 }
 
-.my-posts__body {
+.myPosts__body {
 
 }

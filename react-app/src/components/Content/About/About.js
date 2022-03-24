@@ -1,8 +1,8 @@
-import './About.css';
+import s from './About.module.css';
 
 const About = () => {
   return (
-    <div className="about">
+    <div className={s.about}>
       Here will be about page
     </div>
   );

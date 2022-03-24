@@ -1,14 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import './Nav.css';
+import s from './Nav.module.css';
 
 const Nav = () => {
   return (
-    <div className="nav">
+    <div className={s.nav}>
       <ul>
-        <li><NavLink className={navData => navData.isActive ? 'active' : ''} to="/">Home</NavLink></li>
-        <li><NavLink className={navData => navData.isActive ? 'active' : ''} to="/Posts">Posts</NavLink></li>
-        <li><NavLink className={navData => navData.isActive ? 'active' : ''} to="/About">About</NavLink></li>
-        <li><NavLink className={navData => navData.isActive ? 'active' : ''} to="/Contacts">Contacts</NavLink></li>
+        <li className={s.nav__item}><NavLink className={navData => navData.isActive ? s.nav__linkActive + ' ' + s.nav__link : s.nav__link} to="/">Home</NavLink></li>
+        <li className={s.nav__item}><NavLink className={navData => navData.isActive ? s.nav__linkActive + ' ' + s.nav__link : s.nav__link} to="/Posts">Posts</NavLink></li>
+        <li className={s.nav__item}><NavLink className={navData => navData.isActive ? s.nav__linkActive + ' ' + s.nav__link : s.nav__link} to="/About">About</NavLink></li>
+        <li className={s.nav__item}><NavLink className={navData => navData.isActive ? s.nav__linkActive + ' ' + s.nav__link : s.nav__link} to="/Contacts">Contacts</NavLink></li>
       </ul>
     </div>
   );
